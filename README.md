@@ -21,10 +21,11 @@ Contributions welcome — open an issue or PR to suggest new links.
   - [News & Blogs](#news--blogs)
   - [Official Organisations](#official-organisations)
 - [Play](#play)
-  - [Clubs & Venues (UK)](#clubs--venues-uk)
+  - [Clubs — London](#clubs--london)
+  - [Clubs — Rest of UK](#clubs--rest-of-uk)
+  - [Social Ping Pong Venues](#social-ping-pong-venues)
+  - [Find a Club or Table](#find-a-club-or-table)
   - [Training & Summer Camps](#training--summer-camps)
-  - [Ping Pong Bars & Social Venues](#ping-pong-bars--social-venues)
-  - [Find a Table](#find-a-table)
 - [Tools](#tools)
 
 ---
@@ -173,15 +174,42 @@ Contributions welcome — open an issue or PR to suggest new links.
 
 ## Play
 
-### Clubs & Venues (UK)
+### Clubs — London
 
-- [eBaTT (Eli Baraty)](https://ebatt.co.uk/) — Coaching and club, London
+- [Fusion TTC](https://fusionttc.co.uk/) — One of the largest clubs in London and the South East, with its own dedicated full-time venue in South Bermondsey; founded 1989
+- [Morpeth TTC](http://www.morpethttc.co.uk/) — Major East London club at Morpeth School, Bethnal Green, with around 16 tables; many of the UK's top juniors and seniors train here
+- [eBaTT (Eli Baraty)](https://ebatt.co.uk/) — Coaching academy and club in North-West London
+- [Urban TTC](https://www.urbantabletennis.com/) — London club that also runs international training camps and TT holidays
+- [Ellenborough TTC](https://www.ellenboroughttc.com/) — Long-established Enfield club competing in the British League
+- [Moberly TTC](https://www.moberlyttc.com/) — Friendly West London club with courts in Hammersmith, Paddington, and Kilburn
+- [Barnet TTC](https://bttc.co.uk/) — Dedicated table tennis centre a short walk from High Barnet tube
+- [Table Tennis Fight Club](https://www.tabletennisfightclub.com/) — Invite-only club with secret training locations; open-to-all weekend sessions in King's Cross
+
+Also notable: London Academy (Table Tennis England's London Pathway Development Centre) and Greenhouse Sports' table tennis programme at Morpeth — both findable via the [Pathway Development Centres page](https://www.tabletennisengland.co.uk/pathway-development-centres/).
+
+### Clubs — Rest of UK
+
+- [Ormesby TTC](https://ormesbytabletennisclub.org.uk/) — Middlesbrough; legendary club founded 1957 that won the European Club Cup in 1972, now a full-time 15-table centre and TTE Pathway Development Centre
+- [Kingfisher TTC](https://kingfishertabletennisclub.com/) — Reading (Woodley); purpose-built full-time facility that has produced 18 senior international players
+- [Draycott & Long Eaton TTC](https://www.dlettc.co.uk/) — Derbyshire; East Midlands Pathway Centre and a Senior British League powerhouse
+- [BATTS Harlow](https://www.battsharlow.com/) — Essex; full-time table tennis centre
 - [HRC](http://hertsttl.org.uk/Clubz.asp?Club=HRC) — Herts Table Tennis League club page
-- [Ellenborough TTC](https://www.ellenboroughttc.com/)
-- [BATTS Harlow](https://www.battsharlow.com/)
-- [Table Tennis Fight Club](https://www.tabletennisfightclub.com/)
 
-**TT venues in London** — [Google Maps list](https://maps.app.goo.gl/aDzZLfKiQ43TPQqXA?g_st=i)
+Other elite UK clubs worth knowing: Nottingham Sycamore, Woodfield (Birmingham), Halton (Widnes), Plymouth TTC, Swerve (Middlesbrough), and in Scotland, Drumchapel Glasgow and North Ayrshire — see [Expert Table Tennis's best clubs list](https://www.experttabletennis.com/best-table-tennis-clubs/) and the [UK club directory](https://www.allabouttabletennis.com/table-tennis-uk.html).
+
+### Social Ping Pong Venues
+
+- [Bounce](https://www.bouncepingpong.com/) — London's flagship ping pong bars in Farringdon and Old Street; the Farringdon venue sits on the site where ping pong was patented in 1901, with 17 tables including a London 2012 Olympic table
+- [The Bat and Ball](https://www.thebatandball.com/) — Championship-size tables plus food, DJs, and karaoke at Westfield Stratford and Covent Garden
+- [Players Social](https://www.players-social.com/games) — Games-and-food social venue
+- [Roxy Ball Room / Roxy Lanes](https://roxyleisure.co.uk/activity/ping-pong/) — Nationwide games-bar chain with full-size tables across London, Manchester, Leeds, Sheffield, and more
+
+### Find a Club or Table
+
+- [Table Tennis England — Table Finder](https://www.tabletennisengland.co.uk/table-finder/#) — Free outdoor tables across England
+- [TT Leagues](https://british.ttleagues.com/) — Official Table Tennis England platform for leagues, clubs, and fixtures
+- [AllAboutTableTennis — UK Club Search](https://www.allabouttabletennis.com/table-tennis-uk.html) — Directory of clubs across England, Scotland, Wales, and Ireland
+- **TT venues in London** — [Google Maps list](https://maps.app.goo.gl/aDzZLfKiQ43TPQqXA?g_st=i)
 
 ### Training & Summer Camps
 
@@ -214,16 +242,6 @@ Contributions welcome — open an issue or PR to suggest new links.
 - [Table Tennis Coach UK — Camps in UK & Europe](https://www.tabletenniscoach.me.uk/table-tennis-camps-in-uk-and-europe/) — Actively maintained list of camps across Europe
 - [Butterfly — Camps & Classes](https://butterflyonline.com/we-are-butterfly/camps-classes/) — Directory of Butterfly-sponsored camps across North America
 - [Expert Table Tennis — Best Training Camps](https://www.experttabletennis.com/best-table-tennis-training-camps/) — First-hand reviews of camps worldwide, including HiTT Malta and Hennebont
-
-### Ping Pong Bars & Social Venues
-
-- [Bounce](https://www.bouncepingpong.com/) — Ping pong bars, London
-- [The Bat and Ball](https://www.thebatandball.com/)
-- [Players Social](https://www.players-social.com/games)
-
-### Find a Table
-
-- [Table Tennis England — Table Finder](https://www.tabletennisengland.co.uk/table-finder/#) — Free outdoor tables across England
 
 ## Tools
 
