@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Markdown Viewer</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-<div id="content"></div>
+
+<div id="content">Loading...</div>
 
 <script>
-fetch("README.md")
-  .then(r => r.text())
-  .then(md => {
-    document.getElementById("content").innerHTML = marked.parse(md);
-  });
+fetch('./Readme.md')
+    .then(response => {
+        if (!response.ok) throw new Error(response.status);
+        return response.text();
+    })
+    .then(md => {
+        document.getElementById('content').innerHTML = marked.parse(md);
+    })
+    .catch(err => {
+        document.getElementById('content').innerHTML =
+            '<h2>Error</h2><pre>' + err + '</pre>';
+    });
 </script>
 
 </body>
