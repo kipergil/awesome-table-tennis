@@ -229,7 +229,6 @@ Contributions welcome — open an issue or PR to suggest new links.
 
 - [Ratings Central](https://www.ratingscentral.com/) — Highly accurate global rating system used by clubs and leagues worldwide
 - [Stadium](https://stadiumcompete.com/) — Free tournament and league management platform with live results
-- [Zermelo](https://www.ratingscentral.com/) — Tournament-running software that integrates with Ratings Central
 
 ---
 
