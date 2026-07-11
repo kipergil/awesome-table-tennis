@@ -48,7 +48,7 @@ Contributions welcome — open an issue or PR to suggest new links.
 - [PingSkills](https://youtube.com/@pingskills) — Tutorials, match analysis, and the long-running Ask the Coach show
 - [PingSunday (EmRatThich)](https://youtube.com/@pingsunday) — Chinese-philosophy coaching and technique breakdowns
 - [Ti Long Club](https://youtube.com/@tilongclub) — Technique breakdowns from a coach trained in the Chinese system
-- [Table Tennis University](https://youtube.com/@TableTennisUniversity) — Structured coaching from pro coaches
+- [Table Tennis University](https://www.youtube.com/channel/UCqA1KASrQLjLVNK9KnFKxFQ) — Structured coaching from pro coach Tao Li
 - [The Table Tennis Service Guy](https://youtube.com/@TheTableTennisServiceGuy) — Deep dives on serving
 - [Paragon Table Tennis](https://youtube.com/@paragontabletennis8555)
 - [Nick Rudd](https://youtube.com/@NickRudd)
@@ -109,7 +109,7 @@ Contributions welcome — open an issue or PR to suggest new links.
 - [The Expert Table Tennis Podcast](https://www.experttabletennis.com/podcast/) — Ben Larcombe's long-running show with players and coaches
 - [TTDCast (TableTennisDaily)](https://www.tabletennisdaily.com/forum/forums/podcast.304/) — Interviews with top pros recorded at major events
 - [Ask The Coach Show](https://www.pingskills.com/) — PingSkills' Q&A podcast answering listener questions
-- [Talkin' Smash](https://podcasts.apple.com/podcast/talkin-smash/id1445767014) — Matt Hetherington's wide-ranging show powered by JOOLA
+- [Talkin' Smash](https://podcasts.apple.com/us/podcast/talkin-smash-podcast-powered-by-joola/id1706374396) — Matt Hetherington's wide-ranging show powered by JOOLA
 
 ## Gear
 
@@ -145,7 +145,7 @@ Contributions welcome — open an issue or PR to suggest new links.
 - [Stiga](https://stigasports.com/) — Swedish legend; home of the Cybershape
 - [JOOLA](https://joola.com/)
 - [Donic](https://www.donic.com/)
-- [Tibhar](https://www.tibhar.com/)
+- [Tibhar](https://tibhar.info/en/)
 
 ## Community & News
 
@@ -197,7 +197,7 @@ Contributions welcome — open an issue or PR to suggest new links.
 - [B75 International Table Tennis Camp](https://www.facebook.com/InternationalTrainingcampDenmark/) — Legendary Danish summer camp in Hirtshals, an ITTF Hotspot Centre mixing top European and Chinese coaches; runs every July
 - [TT Camps Hungary](https://www.ttcampshungary.com/) — Year-round academy in Eger plus summer camps at SPINCITY Budapest, led by coaches with Olympic experience
 - [Ping Center — GV Hennebont](https://pingcenter-gvhtt.com/) — Training holidays in Brittany, France, run by one of Europe's renowned clubs
-- [Borussia Düsseldorf](https://www.borussia-duesseldorf.com/) — Summer camps at Germany's most famous club
+- [Borussia Düsseldorf](https://www.borussia-duesseldorf.com/en/) — Courses and camps at Germany's most famous club, home of the andro table tennis school
 - [Urban Table Tennis — International Camps](https://www.urbantabletennis.com/en/elite/international-camps) — Camps and TT holidays with partners across Germany, France, Austria, Hungary, Croatia, Italy, Spain, Sweden, and Japan
 - [ETTU Eurotalents Camps](https://www.ettu.org/development-eurotalents-and-selection-camps/) — Official European development and selection camps for junior talents
 
@@ -207,7 +207,7 @@ Contributions welcome — open an issue or PR to suggest new links.
 - [Paddle Palace Club — Camps](https://paddlepalaceclub.com/camps/) — Portland, OR; youth and adult camps at the historic Paddle Palace club
 - [Kou Lei TTC](https://www.kouleittc.com/) — Bay Area academy with beginner-to-advanced training camps
 - [NJTTC Summer Camp](https://www.njttc.org/summercamp.html) — New Jersey camps with former Chinese provincial team coaches
-- [Maryland Table Tennis Center](https://www.mdttc.com/) — One of the longest-running US camp programmes (spring, summer, and Christmas camps)
+- [Maryland Table Tennis Center](https://mdttc.com/table-tennis-camps/) — One of the longest-running US camp programmes (spring, summer, and winter camps since 1992)
 
 **Worldwide directories**
 
