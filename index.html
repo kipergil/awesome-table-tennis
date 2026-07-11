@@ -8,6 +8,9 @@
 href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
 
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
 <style>
     body {
         background: #f6f8fa;
@@ -38,9 +41,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.
 </style>
 </head>
 <body>
-
+<main class="container">
 <article class="markdown-body" id="content"></article>
-
+</main>
 <script>
 fetch('https://raw.githubusercontent.com/kipergil/awesome-table-tennis/main/README.md')
     .then(response => {
@@ -49,6 +52,17 @@ fetch('https://raw.githubusercontent.com/kipergil/awesome-table-tennis/main/READ
     })
     .then(md => {
         document.getElementById('content').innerHTML = marked.parse(md);
+    
+        document.querySelectorAll('.markdown-body h1, .markdown-body h2, .markdown-body h3').forEach(h => {
+        const id = h.textContent
+            .toLowerCase()
+            .replace(/[^\w\s-]/g, '')
+            .trim()
+            .replace(/\s+/g, '-');
+    
+        h.id = id;
+        });
+    
     })
     .catch(err => {
         document.getElementById('content').innerHTML =
