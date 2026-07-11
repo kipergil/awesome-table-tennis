@@ -1,47 +1,148 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Markdown Viewer</title>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awesome Table Tennis</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css">
+
 <style>
-html {
-    scroll-behavior: smooth;
+:root{--sidebar:290px}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f6f8fa;font-family:Inter,sans-serif}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:#16a34a;z-index:9999}
+header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #ddd;padding:.75rem 1rem;display:flex;gap:1rem;align-items:center}
+header strong{flex:1}
+.layout{display:grid;grid-template-columns:var(--sidebar) 1fr;max-width:1700px;margin:auto}
+aside{position:sticky;top:64px;height:calc(100vh - 64px);overflow:auto;background:#fff;border-right:1px solid #ddd;padding:1rem}
+main{padding:2rem}
+.markdown-body{max-width:1000px;margin:auto;padding:3rem;background:#fff;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+#toc a{display:block;padding:.3rem .6rem;color:#444;text-decoration:none;border-left:3px solid transparent}
+#toc a.active{border-color:#16a34a;color:#16a34a;font-weight:600}
+table{display:block;overflow-x:auto}
+pre{overflow:auto}
+img{max-width:100%;height:auto}
+#topBtn{display:none;position:fixed;right:20px;bottom:20px;border-radius:50%;width:48px;height:48px}
+#menuBtn{display:none}
+.loading{text-align:center;padding:5rem;color:#666}
+@media(prefers-color-scheme:dark){
+html[data-theme="auto"] body{background:#0d1117}
+html[data-theme="auto"] .markdown-body{background:#161b22;color:#c9d1d9}
+}
+html[data-theme="dark"] body{background:#0d1117}
+html[data-theme="dark"] header,
+html[data-theme="dark"] aside,
+html[data-theme="dark"] .markdown-body{background:#161b22;color:#c9d1d9;border-color:#30363d}
+html[data-theme="dark"] #toc a{color:#c9d1d9}
+@media(max-width:900px){
+.layout{grid-template-columns:1fr}
+aside{position:fixed;left:-100%;top:0;width:280px;height:100%;transition:left .25s;z-index:2000}
+aside.open{left:0}
+main{padding:1rem}
+.markdown-body{padding:1.2rem}
+#menuBtn{display:inline-block}
 }
 </style>
-
 </head>
 <body>
-<main class="container">
-<article class="markdown-body" id="content"></article>
-</main>
-<script>
-fetch('https://raw.githubusercontent.com/kipergil/awesome-table-tennis/main/README.md')
-    .then(response => {
-        if (!response.ok) throw new Error(response.status);
-        return response.text();
-    })
-    .then(md => {
-        document.getElementById('content').innerHTML = marked.parse(md);
-    
-        document.querySelectorAll('.markdown-body h1, .markdown-body h2, .markdown-body h3').forEach(h => {
-        const id = h.textContent
-            .toLowerCase()
-            .replace(/[^\w\s-]/g, '')
-            .trim()
-            .replace(/\s+/g, '-');
-    
-        h.id = id;
-        });
-    
-    })
-    .catch(err => {
-        document.getElementById('content').innerHTML =
-            '<h2>Error</h2><pre>' + err + '</pre>';
-    });
-</script>
+<div id="progress"></div>
+<header>
+<button id="menuBtn">â°</button>
+<strong>ð Awesome Table Tennis</strong>
+<button id="themeBtn">ð</button>
+</header>
 
+<div class="layout">
+<aside id="sidebar">
+<h5>Contents</h5>
+<nav id="toc"></nav>
+</aside>
+<main>
+<article id="content" class="markdown-body">
+<div class="loading">Loading README...</div>
+</article>
+</main>
+</div>
+
+<button id="topBtn">â</button>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script>
+
+<script>
+const content=document.getElementById("content");
+const toc=document.getElementById("toc");
+const topBtn=document.getElementById("topBtn");
+const menuBtn=document.getElementById("menuBtn");
+const themeBtn=document.getElementById("themeBtn");
+const sidebar=document.getElementById("sidebar");
+
+fetch("https://raw.githubusercontent.com/kipergil/awesome-table-tennis/main/README.md")
+.then(r=>{
+ if(!r.ok) throw new Error("GitHub returned "+r.status);
+ return r.text();
+})
+.then(md=>{
+ content.innerHTML=marked.parse(md);
+
+ content.querySelectorAll("img").forEach(i=>i.loading="lazy");
+ content.querySelectorAll("pre code").forEach(el=>hljs.highlightElement(el));
+
+ const headings=[...content.querySelectorAll("h1,h2,h3")];
+ headings.forEach(h=>{
+   const slug=h.textContent.toLowerCase().replace(/[^\w\s-]/g,"").trim().replace(/\s+/g,"-");
+   h.id=slug;
+   const a=document.createElement("a");
+   a.href="#"+slug;
+   a.textContent=h.textContent;
+   a.style.marginLeft=((parseInt(h.tagName[1])-1)*14)+"px";
+   toc.appendChild(a);
+ });
+
+ mediumZoom(content.querySelectorAll("img"));
+
+ const links=[...toc.querySelectorAll("a")];
+ const io=new IntersectionObserver(entries=>{
+   entries.forEach(e=>{
+      if(e.isIntersecting){
+        links.forEach(l=>l.classList.remove("active"));
+        const l=toc.querySelector('a[href="#'+e.target.id+'"]');
+        if(l) l.classList.add("active");
+      }
+   });
+ },{rootMargin:"0px 0px -70% 0px"});
+ headings.forEach(h=>io.observe(h));
+})
+.catch(err=>{
+ content.innerHTML="<h2>Unable to load README</h2><p>"+err.message+"</p>";
+});
+
+window.addEventListener("scroll",()=>{
+ const d=document.documentElement;
+ document.getElementById("progress").style.width=(d.scrollTop/(d.scrollHeight-d.clientHeight))*100+"%";
+ topBtn.style.display=window.scrollY>500?"block":"none";
+});
+topBtn.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+menuBtn.addEventListener("click",()=>sidebar.classList.toggle("open"));
+themeBtn.addEventListener("click",()=>{
+ const cur=document.documentElement.dataset.theme||"auto";
+ const next=cur==="light"?"dark":cur==="dark"?"auto":"light";
+ document.documentElement.dataset.theme=next;
+ localStorage.setItem("theme",next);
+});
+document.documentElement.dataset.theme=localStorage.getItem("theme")||"auto";
+document.addEventListener("click",e=>{
+ if(window.innerWidth<900 && !sidebar.contains(e.target) && e.target!==menuBtn){sidebar.classList.remove("open");}
+});
+</script>
 </body>
 </html>
