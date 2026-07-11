@@ -32,11 +32,14 @@ pre{overflow:auto}
 img{max-width:100%;height:auto}
 #topBtn{display:none;position:fixed;right:20px;bottom:20px;border-radius:50%;width:48px;height:48px}
 #menuBtn{display:none}
+#hideTocBtn{margin-left:auto}
 .loading{text-align:center;padding:5rem;color:#666}
+#hideTocBtn{display:none}
 @media(max-width:900px){
 .layout{grid-template-columns:1fr}
 aside{position:fixed;left:-100%;top:0;width:280px;height:100%;transition:left .25s;z-index:2000}
 aside.open{left:0}
+#hideTocBtn{display:inline-flex}
 main{padding:1rem}
 .markdown-body{padding:1.2rem}
 #menuBtn{display:inline-block}
@@ -48,7 +51,7 @@ main{padding:1rem}
 <header>
 <button id="menuBtn" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
 <strong><i class="fa-solid fa-table-tennis-paddle-ball"></i> Awesome Table Tennis</strong>
-<button id="themeBtn" aria-label="Theme"><i class="fa-solid fa-circle-half-stroke"></i></button>
+<button id="hideTocBtn" aria-label="Hide contents"><i class="fa-solid fa-xmark"></i></button>
 </header>
 
 <div class="layout">
@@ -74,7 +77,7 @@ const content=document.getElementById("content");
 const toc=document.getElementById("toc");
 const topBtn=document.getElementById("topBtn");
 const menuBtn=document.getElementById("menuBtn");
-const themeBtn=document.getElementById("themeBtn");
+const hideTocBtn=document.getElementById("hideTocBtn");
 const sidebar=document.getElementById("sidebar");
 
 fetch("https://raw.githubusercontent.com/kipergil/awesome-table-tennis/main/README.md")
@@ -105,13 +108,16 @@ window.addEventListener("scroll",()=>{
 });
 topBtn.onclick=()=>window.scrollTo({top:0,behavior:"smooth"});
 menuBtn.onclick=()=>sidebar.classList.toggle("open");
-themeBtn.onclick=()=>{
- const cur=document.documentElement.dataset.theme||"auto";
- const next=cur==="light"?"dark":cur==="dark"?"auto":"light";
- document.documentElement.dataset.theme=next;
- localStorage.setItem("theme",next);
-};
-document.documentElement.dataset.theme=localStorage.getItem("theme")||"auto";
+
+hideTocBtn.onclick=()=>sidebar.classList.remove("open");
+
+document.addEventListener("click",e=>{
+  const link=e.target.closest("#toc a");
+  if(link && window.innerWidth<900){
+      sidebar.classList.remove("open");
+  }
+});
+
 </script>
 </body>
 </html>
