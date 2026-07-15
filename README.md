@@ -1,4 +1,4 @@
-# 🏓 Awesome Table Tennis
+mi# 🏓 Awesome Table Tennis
 
 > A curated collection of the best table tennis content, creators, communities, gear resources, and places to play.
 
@@ -10,10 +10,10 @@ Contributions welcome — open an issue or PR to suggest new links.
   - [YouTube](#youtube)
   - [Instagram](#instagram)
 - [Learn](#learn)
-  - [Online Academies & Video Courses](#online-academies--video-courses)
+  - [Online Video Courses](#online-video-courses)
   - [Podcasts](#podcasts)
 - [Gear](#gear)
-  - [Equipment Reviews & Databases](#equipment-reviews--databases)
+  - [Equipment Reviews](#equipment-reviews)
   - [Shopping — UK](#shopping--uk)
   - [Shopping — International](#shopping--international)
 - [Community & News](#community--news)
@@ -97,7 +97,7 @@ Contributions welcome — open an issue or PR to suggest new links.
 
 ## Learn
 
-### Online Academies & Video Courses
+### Online Video Courses
 
 - [Tom's TT Academy](https://www.tomsttacademy.com/) — Structured video courses by Tom Lodziak
 - [Table Tennis University](https://tabletennisuniversity.com/) — Courses from world-class coaches
@@ -114,7 +114,7 @@ Contributions welcome — open an issue or PR to suggest new links.
 
 ## Gear
 
-### Equipment Reviews & Databases
+### Equipment Reviews
 
 - [RevSpin](https://revspin.net/) — Community-driven ratings database for rubbers, blades, and rackets
 - [Racket Insight](https://racketinsight.com/) — In-depth playtested reviews and buying guides
