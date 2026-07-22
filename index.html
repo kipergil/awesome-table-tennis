@@ -86,8 +86,20 @@ fetch("https://raw.githubusercontent.com/kipergil/awesome-table-tennis/main/READ
  content.querySelectorAll("img").forEach(i=>i.loading="lazy");
  content.querySelectorAll("pre code").forEach(el=>hljs.highlightElement(el));
  const headings=[...content.querySelectorAll("h1,h2,h3")];
+ const slugCounts={};
  headings.forEach(h=>{
-   const slug=h.textContent.toLowerCase().replace(/[^^\w\s-]/g,"").trim().replace(/\s+/g,"-");
+   // Matches GitHub's own heading-anchor algorithm: strip characters that
+   // aren't word chars/spaces/hyphens (without collapsing the spaces left
+   // behind), then turn each individual space into a hyphen. This keeps
+   // generated ids in sync with the hand-written #anchor links in the
+   // README's "Contents" section, which were authored against GitHub's slugs.
+   let slug=h.textContent.toLowerCase().replace(/[^\w\s-]/g,"").replace(/ /g,"-");
+   if(slugCounts[slug]!==undefined){
+     slugCounts[slug]++;
+     slug=slug+"-"+slugCounts[slug];
+   }else{
+     slugCounts[slug]=0;
+   }
    h.id=slug;
    const a=document.createElement("a");
    a.href="#"+slug;
@@ -96,6 +108,13 @@ fetch("https://raw.githubusercontent.com/kipergil/awesome-table-tennis/main/READ
    toc.appendChild(a);
  });
  mediumZoom(content.querySelectorAll("img"));
+ if(location.hash){
+   // The browser's automatic scroll-to-hash on load happens before this
+   // content (and its heading ids) exist, since it's fetched async — so
+   // deep links need a manual scroll once the matching heading is in the DOM.
+   const target=document.getElementById(decodeURIComponent(location.hash.slice(1)));
+   if(target) target.scrollIntoView();
+ }
 }).catch(err=>{
  content.innerHTML="<h2>Unable to load README</h2><p>"+err.message+"</p>";
 });

@@ -1,4 +1,4 @@
-mi# 🏓 Awesome Table Tennis
+# 🏓 Awesome Table Tennis
 
 > A curated collection of the best table tennis content, creators, communities, gear resources, and places to play.
 
