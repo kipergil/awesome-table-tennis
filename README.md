@@ -9,6 +9,9 @@ Contributions welcome — open an issue or PR to suggest new links.
 - [Watch & Follow](#watch--follow)
   - [YouTube](#youtube)
   - [Instagram](#instagram)
+- [Pro Players](#pro-players)
+  - [Instagram](#instagram-1)
+  - [YouTube](#youtube-1)
 - [Learn](#learn)
   - [Online Video Courses](#online-video-courses)
   - [Podcasts](#podcasts)
@@ -26,6 +29,10 @@ Contributions welcome — open an issue or PR to suggest new links.
   - [Social Ping Pong Venues](#social-ping-pong-venues)
   - [Find a Club or Table](#find-a-club-or-table)
   - [Training & Summer Camps](#training--summer-camps)
+- [Ping Pong Bars & Cafes (International)](#ping-pong-bars--cafes-international)
+  - [North America](#north-america)
+  - [Europe](#europe)
+  - [Asia](#asia)
 - [Tools](#tools)
 
 ---
@@ -94,6 +101,24 @@ Contributions welcome — open an issue or PR to suggest new links.
 - [@tricks_shot_life](https://www.instagram.com/tricks_shot_life)
 - [@pingbrothers](https://www.instagram.com/pingbrothers)
 - [@spartanstabletennisclub](https://www.instagram.com/spartanstabletennisclub)
+
+## Pro Players
+
+### Instagram
+
+- [@sunyingsha_official](https://www.instagram.com/sunyingsha_official/) — Sun Yingsha, World No. 1 and Olympic singles champion from China
+- [@timoboll](https://www.instagram.com/timoboll/) — Timo Boll, German legend and multiple-time European champion
+- [@moregardhtruls](https://www.instagram.com/moregardhtruls/) — Truls Möregårdh, Swedish Olympic silver medallist and Vice World Champion
+- [@dimaovtcharov](https://www.instagram.com/dimaovtcharov/) — Dimitrij Ovtcharov, German World Cup champion and Olympic medallist
+- [@manikabatra.15](https://www.instagram.com/manikabatra.15/) — Manika Batra, India's top-ranked player and three-time Olympian
+- [@mima_ito](https://www.instagram.com/mima_ito/) — Mima Ito, Japanese Olympic medallist and former World No. 1
+- [@hugocalderano](https://www.instagram.com/hugocalderano/) — Hugo Calderano, Brazil's top-ranked player and the sport's leading South American star
+- [@felix.lebrun](https://www.instagram.com/felix.lebrun/) — Félix Lebrun, rising French star and national champion
+- [@wangchuqin_official](https://www.instagram.com/wangchuqin_official/) — Wang Chuqin, World No. 1 from China — unverified: Instagram is blocked in mainland China, so this may be a fan-run account rather than his own
+
+### YouTube
+
+- [Hugo Calderano](https://www.youtube.com/channel/UCvM0hrsk4nXqPhpZHzquy-Q) — Table tennis tips, full matches, and interviews straight from the Brazilian star
 
 ## Learn
 
@@ -242,6 +267,24 @@ Other elite UK clubs worth knowing: Nottingham Sycamore, Woodfield (Birmingham),
 - [Table Tennis Coach UK — Camps in UK & Europe](https://www.tabletenniscoach.me.uk/table-tennis-camps-in-uk-and-europe/) — Actively maintained list of camps across Europe
 - [Butterfly — Camps & Classes](https://butterflyonline.com/we-are-butterfly/camps-classes/) — Directory of Butterfly-sponsored camps across North America
 - [Expert Table Tennis — Best Training Camps](https://www.experttabletennis.com/best-table-tennis-training-camps/) — First-hand reviews of camps worldwide, including HiTT Malta and Hennebont
+
+## Ping Pong Bars & Cafes (International)
+
+### North America
+
+- [SPIN](https://wearespin.com/) — Ping pong social club chain co-founded by Susan Sarandon; locations in New York, Boston, Chicago, Philadelphia, San Francisco, Seattle, Washington DC, and Toronto
+- [PingPod](https://pingpod.com/) — Reservable, self-service 24/7 ping pong pods across New York City, New Jersey, Philadelphia, Boston, Miami, and Jackson, WY
+- [AceBounce](https://www.acebounce.com/) — Chicago's home for competitive socialising; 15 professional tables plus food and drinks
+
+### Europe
+
+- [Gossima Ping Pong Bar](https://www.instagram.com/gossimapingpongbar/) — Paris's first ping pong bar, founded by former world champion Jean-Philippe Gatien
+- [Ding Dong Ping Pong Club](https://dingdongpingpong.club/) — Berlin table tennis club with app-based table booking, ball robots, and multiple Prenzlauer Berg locations
+- [Pong — House of Ping](https://pongbar.nl/eng/) — Cosy Amsterdam ping pong bar that also has darts, karaoke, and board games
+
+### Asia
+
+- [TopTable](https://www.toptable.com.sg/) — Singapore's first table tennis-themed social club and bar, based at New Bahru
 
 ## Tools
 
