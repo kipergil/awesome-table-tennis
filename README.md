@@ -55,7 +55,7 @@ Contributions welcome — open an issue or PR to suggest new links.
 - [Tom Lodziak](https://youtube.com/@TomLodziak) — Practical coaching for amateur players
 - [PingSkills](https://youtube.com/@pingskills) — Tutorials, match analysis, and the long-running Ask the Coach show
 - [PingSunday (EmRatThich)](https://youtube.com/@pingsunday) — Chinese-philosophy coaching and technique breakdowns
-- [Ti Long Club](https://youtube.com/@tilongclub) — Technique breakdowns from a coach trained in the Chinese system
+- [Ti Long Club](https://youtube.com/@tilongofficial) — Technique breakdowns from a coach trained in the Chinese system
 - [Table Tennis University](https://www.youtube.com/channel/UCqA1KASrQLjLVNK9KnFKxFQ) — Structured coaching from pro coach Tao Li
 - [The Table Tennis Service Guy](https://youtube.com/@TheTableTennisServiceGuy) — Deep dives on serving
 - [Paragon Table Tennis](https://youtube.com/@paragontabletennis8555)
