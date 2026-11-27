@@ -4,6 +4,8 @@
 
 Contributions welcome — open an issue or PR to suggest new links.
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/kipergil)
+
 ## Contents
 
 - [Watch & Follow](#watch--follow)
