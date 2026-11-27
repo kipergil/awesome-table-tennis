@@ -43,6 +43,10 @@
   --accent-soft: rgba(15, 138, 114, 0.1);
   --accent-contrast: #ffffff;
   --danger: #c2410c;
+  --support: #b45309;
+  --support-hover: #92400e;
+  --support-soft: rgba(180, 83, 9, 0.1);
+  --support-contrast: #ffffff;
   --shadow-sm: 0 1px 2px rgba(20, 22, 30, 0.06);
   --shadow-md: 0 6px 20px rgba(20, 22, 30, 0.08);
   --shadow-lg: 0 16px 40px rgba(20, 22, 30, 0.12);
@@ -65,6 +69,10 @@
   --accent-soft: rgba(45, 212, 167, 0.12);
   --accent-contrast: #06231b;
   --danger: #f0975a;
+  --support: #f0b83f;
+  --support-hover: #f6cb70;
+  --support-soft: rgba(240, 184, 63, 0.14);
+  --support-contrast: #2a1a02;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.35);
   --shadow-lg: 0 20px 45px rgba(0, 0, 0, 0.45);
@@ -88,6 +96,10 @@
     --accent-soft: rgba(45, 212, 167, 0.12);
     --accent-contrast: #06231b;
     --danger: #f0975a;
+    --support: #f0b83f;
+    --support-hover: #f6cb70;
+    --support-soft: rgba(240, 184, 63, 0.14);
+    --support-contrast: #2a1a02;
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.35);
     --shadow-lg: 0 20px 45px rgba(0, 0, 0, 0.45);
@@ -269,6 +281,25 @@ main{min-width:0;padding:1.75rem 1.5rem 4rem}
 .btn-primary:hover{background:var(--accent-hover)}
 .btn-ghost{background:var(--surface);border-color:var(--border-strong);color:var(--text-primary)}
 .btn-ghost:hover{background:var(--surface-2)}
+.btn-support{background:var(--support);color:var(--support-contrast)}
+.btn-support:hover{background:var(--support-hover)}
+
+.support-box{
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+  margin:0 0 2rem;padding:1.1rem 1.4rem;
+  background:linear-gradient(135deg, var(--support-soft), transparent 60%), var(--surface);
+  border:1px solid var(--support);border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-sm);
+}
+.support-box-text{display:flex;align-items:center;gap:.9rem;min-width:0}
+.support-box-icon{
+  flex:none;width:42px;height:42px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--support-soft);color:var(--support);
+}
+.support-box-icon svg{width:22px;height:22px}
+.support-box-title{margin:0 0 .15rem;font-weight:700;color:var(--text-primary);font-size:.98rem}
+.support-box-desc{margin:0;color:var(--text-secondary);font-size:.86rem;max-width:44ch}
 
 .skel-line{
   height:.9em;border-radius:6px;background:var(--surface-2);
@@ -400,6 +431,9 @@ main{min-width:0;padding:1.75rem 1.5rem 4rem}
   .sidebar-scrim.open{display:block}
   main{padding:1.25rem 1rem 3rem}
   .hero{padding:1.5rem 1.25rem}
+  .support-box{flex-direction:column;align-items:stretch;text-align:center}
+  .support-box-text{flex-direction:column;text-align:center}
+  .support-box .btn-support{justify-content:center}
   .brand-name{display:none}
   .search-box{margin-left:0}
 }
@@ -456,6 +490,19 @@ main{min-width:0;padding:1.75rem 1.5rem 4rem}
       </div>
     </section>
 
+    <section class="support-box" aria-label="Support this project">
+      <div class="support-box-text">
+        <span class="support-box-icon" id="supportIcon" aria-hidden="true"></span>
+        <div>
+          <p class="support-box-title">Enjoying this list?</p>
+          <p class="support-box-desc">Every link here is hand-researched and verified, not scraped. If it saved you a search, a coffee keeps the research going.</p>
+        </div>
+      </div>
+      <a class="btn btn-support" href="https://ko-fi.com/kipergil" target="_blank" rel="noopener noreferrer">
+        Support on Ko-fi
+      </a>
+    </section>
+
     <p class="result-summary" id="resultSummary" role="status" aria-live="polite"></p>
 
     <div id="content">
@@ -505,6 +552,7 @@ const ICONS = {
   pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>',
   sliders: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M17 6h3M4 12h3M9 12h11M4 18h13M20 18h0"/><circle cx="15" cy="6" r="2"/><circle cx="7" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></svg>',
   folder: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>',
+  coffee: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8z"/><path d="M17 9.5h1.3a2.5 2.5 0 0 1 0 5H17"/><path d="M8 2.5c0 .9-1 .9-1 1.8s1 .9 1 1.8M12.5 2.5c0 .9-1 .9-1 1.8s1 .9 1 1.8"/></svg>',
 };
 function icon(name){ return ICONS[name] || ""; }
 
@@ -530,6 +578,7 @@ themeToggle.innerHTML = icon("sun") + icon("moon");
 topBtn.innerHTML = icon("up");
 searchBox.querySelector("span").innerHTML = icon("search");
 searchClear.innerHTML = icon("close");
+document.getElementById("supportIcon").innerHTML = icon("coffee");
 
 /* ===================== Theme ===================== */
 (function initTheme(){
